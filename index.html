@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Data Science Portfolio — BABAL SHARMA</title>
+  <meta name="description" content="Futuristic neon data science portfolio — projects, interactive dashboard, certificates, testimonials, contact.">
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  <!-- STYLES -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="theme-dark">
+
+  <!-- PAGE LAYOUT -->
+  <div id="app">
+
+    <!-- NAV -->
+    <header class="site-header">
+      <div class="container header-grid">
+        <a class="brand" href="#home">
+          <span class="brand-glow">DATA SCIENCE AND AI</span>IITM
+        </a>
+
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#dashboard" class="nav-link">Dashboard</a>
+          <a href="#certificates" class="nav-link">Certificates</a>
+          <a href="#testimonials" class="nav-link">Testimonials</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🖤</button>
+          <button id="menu-toggle" class="menu-btn" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="eyebrow">Futuristic · Neon · Explainable AI</div>
+          <h1 class="hero-title">Hi — I'm <span class="name">Babal.Sharma</span><br><span class="accent">I build ML systems & visual stories</span></h1>
+          <p class="hero-sub">Machine Learning Engineer • Data Scientist • ModelOps — production-ready, explainable, and human-centered.</p>
+
+          <div class="hero-cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Hire / Collaborate</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta">
+              <span class="meta-value" data-target="12">0</span>
+              <span class="meta-label">Projects</span>
+            </div>
+            <div class="meta">
+              <span class="meta-value" data-target="5">1
+      
+              </span>
+              <span class="meta-label">Years</span>
+            </div>
+            <div class="meta">
+              <span class="meta-value" data-target="42">0</span>
+              <span class="meta-label">K LOC</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="neon-card" id="neon-card" aria-hidden="true">
+            <div class="badge">Data Science</div>
+            <div class="neon-chart">
+              <canvas id="hero-spark" width="360" height="160" aria-hidden="true"></canvas>
+            </div>
+            <div class="neon-body">
+              <h3>Predictive Suite</h3>
+              <p>Production pipelines • Model monitoring • Explainability</p>
+              <div class="chips"><span>Python</span><span>sklearn</span><span>MLflow</span><span>SQL</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- decorative neon background shapes -->
+      <div class="bg-neon" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+      </div>
+
+      <!-- typing line -->
+      <div class="typing-line">
+        <span class="typing-prefix">I turn</span>
+        <span id="typed" class="typed"></span>
+      </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-left card">
+            <h3>Who I am</h3>
+            <p>I design and ship machine learning systems with a focus on interpretability, robustness and performance. I combine statistical rigor with production engineering to build ML that actually helps teams make better decisions.</p>
+
+            <ul class="about-list">
+              <li><strong>Experience:</strong> Model development, MLOps, dashboards</li>
+              <li><strong>Approach:</strong> Testable pipelines, clear metrics, automated monitoring</li>
+              <li><strong>Open to:</strong> Collaborations, consultancy, contract roles</li>
+            </ul>
+
+            <div class="about-actions">
+              <a class="btn small" href="#certificates">My Certificates</a>
+              <a class="btn small ghost" href="#projects">See Projects</a>
+            </div>
+          </div>
+
+          <div class="about-right card">
+            <h3>Quick stats</h3>
+            <div class="stats-grid">
+              <div class="stat neon">
+                <div class="stat-value" data-count="98">0%</div>
+                <div class="stat-label">Model Accuracy</div>
+              </div>
+              <div class="stat neon">
+                <div class="stat-value" data-count="75">0%</div>
+                <div class="stat-label">Data Coverage</div>
+              </div>
+              <div class="stat neon">
+                <div class="stat-value" data-count="99">0%</div>
+                <div class="stat-label">Uptime</div>
+              </div>
+            </div>
+
+            <h4 style="margin-top:18px">Tooling</h4>
+            <div class="tool-cloud">
+              <span>Python</span><span>Pandas</span><span>scikit-learn</span><span>Plotly</span><span>MLflow</span><span>Docker</span><span>Airflow</span><span>SQL</span><span>FastAPI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card card neon" data-percent="92">
+            <div class="skill-head">
+              <h4>Machine Learning</h4>
+              <div class="skill-percent">92%</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">Supervised learning, validation strategy, pipelines and deployment.</p>
+          </div>
+
+          <div class="skill-card card neon" data-percent="88">
+            <div class="skill-head">
+              <h4>Data Visualization</h4>
+              <div class="skill-percent">88%</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">Storytelling with Plotly, D3-like SVG, interactive dashboards.</p>
+          </div>
+
+          <div class="skill-card card neon" data-percent="96">
+            <div class="skill-head">
+              <h4>Python</h4>
+              <div class="skill-percent">96%</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">Production code, data wrangling, libraries, idiomatic Python.</p>
+          </div>
+
+          <div class="skill-card card neon" data-percent="82">
+            <div class="skill-head">
+              <h4>SQL & Databases</h4>
+              <div class="skill-percent">82%</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" style="width:0%"></div>
+            </div>
+            <p class="skill-desc">Optimized queries, data modeling, ETL orchestration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="filter-row">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ml">ML</button>
+          <button class="filter-btn" data-filter="viz">Viz</button>
+          <button class="filter-btn" data-filter="etl">ETL</button>
+          <button class="filter-btn" data-filter="ops">MLOps</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project Card (repeat) -->
+          <article class="project card neon" data-type="ml">
+            <div class="proj-header">
+              <h3>Customer Churn Classifier</h3>
+              <div class="proj-meta"><span>sklearn</span><span>MLflow</span></div>
+            </div>
+            <p class="proj-desc">End-to-end churn prediction with feature-store and drift detection; 18% reduction in churn during pilot.</p>
+            <div class="proj-footer">
+              <button class="btn small view-project" data-title="Customer Churn Classifier" data-desc="Classifier with calibration, feature store, and monitoring.">View</button>
+              <a class="micro-link" href="#" target="_blank" rel="noopener">Repo</a>
+            </div>
+          </article>
+
+          <article class="project card neon" data-type="viz">
+            <div class="proj-header">
+              <h3>Sales Forecast Dashboard</h3>
+              <div class="proj-meta"><span>Plotly</span><span>Dash</span></div>
+            </div>
+            <p class="proj-desc">Interactive forecast UI with drill-down KPIs and scenario simulations for product managers.</p>
+            <div class="proj-footer">
+              <button class="btn small view-project" data-title="Sales Forecast Dashboard" data-desc="Forecasting dashboard with interactive scenario analysis.">View</button>
+              <a class="micro-link" href="#" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </article>
+
+          <article class="project card neon" data-type="etl">
+            <div class="proj-header">
+              <h3>High-throughput ETL Pipeline</h3>
+              <div class="proj-meta"><span>Airflow</span><span>Postgres</span></div>
+            </div>
+            <p class="proj-desc">Robust pipeline with schema validation and tests; ensures reliable daily data delivery.</p>
+            <div class="proj-footer">
+              <button class="btn small view-project" data-title="High-throughput ETL Pipeline" data-desc="Airflow DAGs with monitoring and retries.">View</button>
+              <a class="micro-link" href="#" target="_blank" rel="noopener">Docs</a>
+            </div>
+          </article>
+
+          <article class="project card neon" data-type="ops">
+            <div class="proj-header">
+              <h3>Model Monitoring & Retraining</h3>
+              <div class="proj-meta"><span>Prometheus</span><span>MLflow</span></div>
+            </div>
+            <p class="proj-desc">Automatic drift detection nodes that trigger retraining pipelines and alerting.</p>
+            <div class="proj-footer">
+              <button class="btn small view-project" data-title="Model Monitoring & Retraining" data-desc="Automated retrain based on drift thresholds.">View</button>
+              <a class="micro-link" href="#" target="_blank" rel="noopener">Paper</a>
+            </div>
+          </article>
+
+          <!-- Add more cards to reach richness -->
+          <article class="project card neon" data-type="ml">
+            <div class="proj-header">
+              <h3>Anomaly Detection Engine</h3>
+              <div class="proj-meta"><span>IsolationForest</span><span>Kafka</span></div>
+            </div>
+            <p class="proj-desc">Near-real time anomaly detection stream with adaptive thresholds and explainability outputs.</p>
+            <div class="proj-footer">
+              <button class="btn small view-project" data-title="Anomaly Detection Engine" data-desc="Stream-based anomalous event detection.">View</button>
+              <a class="micro-link" href="#" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section id="dashboard" class="section dashboard">
+      <div class="container">
+        <h2 class="section-title">Interactive Dashboard (Live Demo)</h2>
+        <div class="dashboard-grid">
+          <div class="dash-card card neon" id="dash-line">
+            <h4>Model Performance (Rolling)</h4>
+            <canvas id="lineChart" width="640" height="220"></canvas>
+          </div>
+
+          <div class="dash-card card neon" id="dash-bar">
+            <h4>Feature Importance</h4>
+            <canvas id="barChart" width="640" height="220"></canvas>
+          </div>
+
+          <div class="dash-card card neon" id="dash-spark">
+            <h4>Throughput Sparkline</h4>
+            <canvas id="sparkChart" width="640" height="80"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="section certificates">
+      <div class="container">
+        <h2 class="section-title">Certificates</h2>
+        <div class="cert-grid" id="cert-grid">
+          <!-- certificate items -->
+          <article class="cert card neon">
+            <div class="cert-thumb">📜</div>
+            <div class="cert-body">
+              <h4>Deep Learning Specialization</h4>
+              <p>Completed neural networks and deep learning track — focus on CNNs and sequence models.</p>
+              <div class="cert-actions">
+                <button class="btn small download-cert" data-file="cert-dl.pdf">Download</button>
+                <a class="micro-link" href="#" target="_blank">Verify</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert card neon">
+            <div class="cert-thumb">🏅</div>
+            <div class="cert-body">
+              <h4>Data Engineering with Airflow</h4>
+              <p>Workflow orchestration, DAG design, observability and retries at scale.</p>
+              <div class="cert-actions">
+                <button class="btn small download-cert" data-file="cert-airflow.pdf">Download</button>
+                <a class="micro-link" href="#" target="_blank">Verify</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert card neon">
+            <div class="cert-thumb">🧪</div>
+            <div class="cert-body">
+              <h4>Statistical Inference</h4>
+              <p>Rigorous foundations in hypothesis testing, confidence intervals and experiment design.</p>
+              <div class="cert-actions">
+                <button class="btn small download-cert" data-file="cert-stats.pdf">Download</button>
+                <a class="micro-link" href="#" target="_blank">Verify</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <h2 class="section-title">What people say</h2>
+        <div class="test-carousel" id="test-carousel">
+          <div class="test-card card neon active">
+            <p>"Brilliant engineer — turned our messy data into a production model that saved millions."</p>
+            <div class="who">— Product Lead, RetailCo</div>
+          </div>
+          <div class="test-card card neon">
+            <p>"Clear communicator, excellent judgement on model risk and monitoring. Highly recommended."</p>
+            <div class="who">— Head of Data, FinTech</div>
+          </div>
+          <div class="test-card card neon">
+            <p>"Delivered a dashboard that our execs actually use daily — high impact work."</p>
+            <div class="who">— PM, Logistics</div>
+          </div>
+        </div>
+        <div class="test-controls">
+          <button id="test-prev" class="icon-btn">‹</button>
+          <button id="test-next" class="icon-btn">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form card neon" novalidate>
+            <input type="hidden" name="honeypot" id="honeypot" value="">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" id="cf-name" placeholder="Your name" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" id="cf-email" placeholder="you@company.com" required>
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" id="cf-message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Send message</button>
+              <button type="reset" class="btn ghost">Reset</button>
+            </div>
+            <div id="form-status" class="form-status" aria-live="polite"></div>
+          </form>
+
+          <aside class="contact-info card neon">
+            <h3>Let's build something</h3>
+            <p>Email: <a href="mailto:babalsharma26@gmail.com">babalsharma26@gmail.com</a></p>
+            <p>Location: Remote</p>
+            <div class="social-links">
+              <a href="https://github.com/BabalSharma" aria-label="GitHub">GitHub</a>
+              <a href="https://www.linkedin.com/in/babaldeep-sharma-8b8610383/" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" aria-label="Kaggle">Kaggle</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>© <span id="site-year"></span> BabalSharma — Data Science Portfolio</div>
+        <div class="footer-links">
+          <a href="#privacy">Privacy</a>
+          <a href="#terms">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-panel" role="dialog" aria-modal="true">
+        <button id="modal-close" class="modal-close" aria-label="Close">×</button>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <div class="modal-actions">
+          <a id="modal-repo" class="btn small" href="#" target="_blank" rel="noopener">Repo</a>
+          <a id="modal-live" class="btn small ghost" href="#" target="_blank" rel="noopener">Live</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>
